@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "lang_name": "Deutsch",
+    "direction": "ltr",
+    "font_family": "'Segoe UI', Roboto, sans-serif"
+  },
+  "app": {
+    "title": "Plattform zur Betrugs- und Anomalieerkennung",
+    "subtitle": "Vollständig lokale Analyse von Rechnungs- und Lieferantendaten — ohne Internet",
+    "footer": "© 2026 Betrugserkennungsplattform — 100 % lokal zum Schutz der Datenprivatsphäre",
+    "developed_by": "Konzeption & Entwicklung: Anas Al Rajeh · أنس الراجح",
+    "offline_badge": "Sicherer lokaler Modus"
+  },
+  "sidebar": {
+    "language": "Oberflächensprache",
+    "navigation": "Analysemodule",
+    "data_section": "Datenquelle",
+    "upload_label": "Excel- oder CSV-Datei hochladen",
+    "upload_help": "Die Datei wird nur auf Ihrem Gerät verarbeitet und niemals an einen externen Server gesendet",
+    "use_sample": "Beispieldaten verwenden",
+    "loaded_rows": "{n} Datensätze geladen",
+    "no_data": "Noch keine Daten geladen"
+  },
+  "pages": {
+    "dashboard": "Dashboard",
+    "benford": "Erkennung gefälschter Rechnungen (Benford)",
+    "price_variance": "Preisabweichungsanalyse",
+    "transfers": "Verdächtige Überweisungen",
+    "shell": "Briefkastenfirmen-Tracker"
+  },
+  "dashboard": {
+    "welcome": "Willkommen auf der Betrugserkennungsplattform",
+    "intro": "Wählen Sie ein Analysemodul in der Seitenleiste, um Ihre Daten auf Anzeichen von Manipulation oder Betrug zu prüfen.",
+    "kpi_total_records": "Datensätze gesamt",
+    "kpi_total_amount": "Gesamtbetrag",
+    "kpi_suppliers": "Lieferanten",
+    "kpi_flags": "Aktive Warnungen",
+    "preview": "Datenvorschau",
+    "select_module": "Beginnen Sie mit der Auswahl eines Moduls"
+  },
+  "price_variance": {
+    "title": "Preisabweichungsanalyse",
+    "description": "Erkennt Fälle, in denen ein Mitarbeiter dasselbe Material zu einem deutlich höheren Preis als Kollegen kauft — ein möglicher Hinweis auf Absprachen oder überhöhte Rechnungen.",
+    "col_item": "Spalte Material / Artikel",
+    "col_price": "Spalte Stückpreis",
+    "col_buyer": "Spalte Käufer / Mitarbeiter",
+    "col_supplier": "Spalte Lieferant",
+    "threshold": "Kritische Abweichung (% über dem Median)",
+    "min_samples": "Mindestanzahl Vorgänge pro Material",
+    "run": "Analyse starten",
+    "results_title": "Ergebnisse der Preisabweichung",
+    "no_flags": "Keine verdächtige Abweichung nach den aktuellen Kriterien gefunden.",
+    "summary_by_buyer": "Zusammenfassung nach Käufer",
+    "severity": "Schweregrad",
+    "sev_high": "Hoch",
+    "sev_medium": "Mittel",
+    "sev_low": "Niedrig",
+    "overpaid_total": "Geschätzte Mehrkosten gesamt"
+  },
+  "benford": {
+    "title": "Erkennung gefälschter Rechnungen — Benfordsches Gesetz",
+    "description": "Analysiert die natürliche Verteilung der führenden Ziffern in Rechnungsbeträgen. Eine große Abweichung von der erwarteten Benford-Verteilung kann auf erfundene Zahlen hindeuten.",
+    "col_amount": "Spalte Rechnungsbetrag",
+    "run": "Verteilung prüfen",
+    "expected": "Erwartet (Benford)",
+    "observed": "Beobachtet (Ihre Daten)",
+    "digit": "Führende Ziffer",
+    "chi_square": "Chi-Quadrat-Statistik",
+    "verdict_ok": "Verteilung entspricht dem Benfordschen Gesetz — keine starken Manipulationshinweise.",
+    "verdict_suspicious": "Große Abweichung vom Benfordschen Gesetz — manuelle Prüfung der Rechnungen empfohlen."
+  },
+  "transfers": {
+    "title": "Erkennung verdächtiger Überweisungen",
+    "description": "Identifiziert anomale Beträge, die nicht zum normalen Ausgabenmuster passen, mittels Isolation Forest und Z-Score.",
+    "col_amount": "Spalte Überweisungsbetrag",
+    "method": "Erkennungsalgorithmus",
+    "method_iso": "Isolation Forest",
+    "method_z": "Z-Score",
+    "contamination": "Erwartete Anomalierate",
+    "z_threshold": "Z-Score-Schwellenwert",
+    "run": "Anomalien erkennen",
+    "anomalies_found": "{n} anomale Transaktionen erkannt",
+    "no_anomalies": "Keine anomalen Transaktionen erkannt."
+  },
+  "shell": {
+    "title": "Briefkastenfirmen-Tracker",
+    "description": "Erkennt neue Lieferanten mit plötzlich hohen Umsätzen oder deren Bankkonto mit dem eines Mitarbeiters übereinstimmt.",
+    "col_supplier": "Spalte Lieferant",
+    "col_amount": "Spalte Betrag",
+    "col_date": "Spalte Datum",
+    "col_bank": "Spalte Bankkonto des Lieferanten",
+    "col_emp_bank": "Spalte Bankkonto des Mitarbeiters",
+    "run": "Tracking starten",
+    "new_high_volume": "Neue Lieferanten mit hohem Volumen",
+    "bank_match": "Bankkonten, die mit Mitarbeitern übereinstimmen",
+    "no_findings": "Keine Hinweise auf Briefkastenfirmen gefunden."
+  },
+  "common": {
+    "select_column": "— Spalte wählen —",
+    "error_no_data": "Bitte laden Sie zuerst Daten über die Seitenleiste.",
+    "error_columns": "Bitte wählen Sie die erforderlichen Spalten korrekt aus.",
+    "download_csv": "Ergebnisse herunterladen (CSV)",
+    "rows": "Zeilen",
+    "currency": "Währung"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "lang_name": "English",
+    "direction": "ltr",
+    "font_family": "'Segoe UI', Roboto, sans-serif"
+  },
+  "app": {
+    "title": "Fraud & Anomaly Detection Platform",
+    "subtitle": "Fully local analysis of invoice and supplier data — no internet required",
+    "footer": "© 2026 Fraud Detection Platform — 100% local to protect data privacy",
+    "developed_by": "Designed & developed by: Anas Al Rajeh · أنس الراجح",
+    "offline_badge": "Secure Local Mode"
+  },
+  "sidebar": {
+    "language": "Interface language",
+    "navigation": "Analytical modules",
+    "data_section": "Data source",
+    "upload_label": "Upload an Excel or CSV file",
+    "upload_help": "The file is processed only on your machine and never sent to any external server",
+    "use_sample": "Use sample data",
+    "loaded_rows": "{n} records loaded",
+    "no_data": "No data loaded yet"
+  },
+  "pages": {
+    "dashboard": "Dashboard",
+    "benford": "Fake Invoices Detector (Benford)",
+    "price_variance": "Price Variance Analysis",
+    "transfers": "Suspicious Transfers",
+    "shell": "Shell Companies Tracker"
+  },
+  "dashboard": {
+    "welcome": "Welcome to the Fraud Detection Platform",
+    "intro": "Choose an analytical module from the sidebar to start scanning your data for signs of manipulation or fraud.",
+    "kpi_total_records": "Total records",
+    "kpi_total_amount": "Total amount",
+    "kpi_suppliers": "Suppliers",
+    "kpi_flags": "Active flags",
+    "preview": "Data preview",
+    "select_module": "Start by selecting a module"
+  },
+  "price_variance": {
+    "title": "Price Variance Analysis",
+    "description": "Detect cases where an employee buys the same material at a much higher price than peers, which may indicate collusion or inflated invoices.",
+    "col_item": "Material / item column",
+    "col_price": "Unit price column",
+    "col_buyer": "Buyer / employee column",
+    "col_supplier": "Supplier column",
+    "threshold": "Critical deviation (% above median)",
+    "min_samples": "Minimum transactions per material",
+    "run": "Run analysis",
+    "results_title": "Price variance results",
+    "no_flags": "No suspicious variance detected under the current criteria.",
+    "summary_by_buyer": "Summary by buyer",
+    "severity": "Severity",
+    "sev_high": "High",
+    "sev_medium": "Medium",
+    "sev_low": "Low",
+    "overpaid_total": "Estimated total overpayment"
+  },
+  "benford": {
+    "title": "Fake Invoices Detector — Benford's Law",
+    "description": "Analyzes the natural distribution of leading digits in invoice amounts. A large deviation from the expected Benford distribution may indicate fabricated figures.",
+    "col_amount": "Invoice amount column",
+    "run": "Check distribution",
+    "expected": "Expected (Benford)",
+    "observed": "Observed (your data)",
+    "digit": "Leading digit",
+    "chi_square": "Chi-square statistic",
+    "verdict_ok": "Distribution matches Benford's Law — no strong signs of manipulation.",
+    "verdict_suspicious": "Large deviation from Benford's Law — manual review of invoices is recommended."
+  },
+  "transfers": {
+    "title": "Suspicious Transfers Detection",
+    "description": "Identify anomalous amounts that do not fit the normal spending pattern using Isolation Forest and Z-Score.",
+    "col_amount": "Transfer amount column",
+    "method": "Detection algorithm",
+    "method_iso": "Isolation Forest",
+    "method_z": "Z-Score",
+    "contamination": "Expected anomaly rate",
+    "z_threshold": "Z-Score threshold",
+    "run": "Detect anomalies",
+    "anomalies_found": "{n} anomalous transactions detected",
+    "no_anomalies": "No anomalous transactions detected."
+  },
+  "shell": {
+    "title": "Shell Companies Tracker",
+    "description": "Spot new suppliers with sudden large dealings, or whose bank account matches an employee's account.",
+    "col_supplier": "Supplier column",
+    "col_amount": "Amount column",
+    "col_date": "Date column",
+    "col_bank": "Supplier bank account column",
+    "col_emp_bank": "Employee bank account column",
+    "run": "Start tracking",
+    "new_high_volume": "New suppliers with high volume",
+    "bank_match": "Bank accounts matching employees",
+    "no_findings": "No indicators of shell companies detected."
+  },
+  "common": {
+    "select_column": "— select column —",
+    "error_no_data": "Please load data first from the sidebar.",
+    "error_columns": "Please select the required columns correctly.",
+    "download_csv": "Download results (CSV)",
+    "rows": "rows",
+    "currency": "Currency"
+  }
+}

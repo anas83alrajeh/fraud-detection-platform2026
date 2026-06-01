@@ -1,0 +1,7 @@
+# Fraud & Anomaly Detection Platform — local dependencies only
+streamlit>=1.36.0
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+openpyxl>=3.1.0      # Excel (.xlsx) reading
+xlrd>=2.0.1          # legacy Excel (.xls) reading

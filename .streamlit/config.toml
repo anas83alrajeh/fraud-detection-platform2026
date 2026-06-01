@@ -1,0 +1,10 @@
+[theme]
+primaryColor = "#0E7C66"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F7F9"
+textColor = "#1F2937"
+font = "sans serif"
+
+[server]
+# Keep everything local; no usage stats sent out.
+headless = true
